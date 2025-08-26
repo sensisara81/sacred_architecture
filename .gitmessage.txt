@@ -1,0 +1,12 @@
+[AI-assisted] Brief description of what was implemented
+
+- Used GitHub Copilot for [specific assistance provided]
+- Human-reviewed [what was reviewed and validated]
+- Added [additional modifications made by human]
+- Validated against [security/quality guidelines checked]
+
+Dual Signature:
+- AI: GitHub Copilot (suggestion generation)
+- Human: [Your Name] (review, modification, accountability)
+
+Co-authored-by: GitHub Copilot <copilot@github.com>

@@ -16,15 +16,27 @@ drift, and fragmentation by making collaboration **transparent, accountable, and
 ## Quick Install
 
 ```bash
-# from your repo root
-tar -xzf euystacio-helmi-ethical-shield.tar.gz
+# from your repo root (if cloning this repository)
+git clone https://github.com/sensisara81/sacred_architecture.git
+cd sacred_architecture
 
-# (optional) use our commit message template
+# OR copy the files to your existing repository:
+# - .github/copilot-policy.yml
+# - .copilot/ethical_guidelines.md  
+# - .vscode/settings.json and .vscode/keybindings.json
+# - .gitmessage.txt
+# - .pre-commit-config.yaml
+# - scripts/validate_ai_commit.py
+
+# configure git to use our commit message template
 git config commit.template .gitmessage.txt
 
 # install pre-commit and activate hooks
 pip install pre-commit
 pre-commit install
+
+# test the validator
+python3 scripts/validate_ai_commit.py --help || echo "Validator ready for use"
 ```
 
 ## Dual-Signature Commit (example)
