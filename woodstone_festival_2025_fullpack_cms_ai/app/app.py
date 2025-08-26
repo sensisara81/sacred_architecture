@@ -99,7 +99,7 @@ def docs(slug):
     filename = mapping.get(slug)
     if filename:
         try:
-            with open(os.path.join(os.path.dirname(__file__), "..", "pages-clean", filename), "r", encoding="utf-8") as f:
+            with open(os.path.join(os.path.dirname(__file__), "pages-clean", filename), "r", encoding="utf-8") as f:
                 body = f.read()
             md_html = md_to_html(body)
             title = slug.replace("-", " ").title()
