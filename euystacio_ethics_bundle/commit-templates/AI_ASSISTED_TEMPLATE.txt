@@ -1,0 +1,11 @@
+[AI-assisted] <Short, imperative summary>
+
+- AI Provider(s): GitHub Copilot / ChatGPT (what they generated)
+- Human Guardian: <Name> <email> (what you reviewed/changed)
+- Security & Ethics: <notes on validation, privacy, accessibility>
+- Tests: <added/updated>
+
+Dual Signature:
+- AI Capabilities: GitHub Copilot / ChatGPT
+- Human Guardian: <Name> <email>
+- Date: <ISO date>

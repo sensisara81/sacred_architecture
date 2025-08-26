@@ -1,0 +1,12 @@
+<component name="CopilotSettings">
+  <option name="enabledLanguages">
+    <map>
+      <entry key="Python" value="true" />
+      <entry key="Java" value="true" />
+      <entry key="JavaScript" value="true" />
+      <entry key="TypeScript" value="true" />
+      <entry key="YAML" value="false" />
+      <entry key="Properties" value="false" />
+    </map>
+  </option>
+</component>
