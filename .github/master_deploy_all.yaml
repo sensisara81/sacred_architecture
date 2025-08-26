@@ -1,0 +1,18 @@
+name: Run master_deploy_all.sh
+
+on:
+  pull_request:
+    branches:
+      - main
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Set executable permission
+        run: chmod +x master_deploy_package/master_deploy_all.sh
+      - name: Run deployment script
+        run: ./master_deploy_package/master_deploy_all.sh
