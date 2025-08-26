@@ -1,0 +1,18 @@
+# Deployment artifacts
+logs/
+config/
+assets/
+
+# Temporary files
+*.tmp
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo

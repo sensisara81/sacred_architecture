@@ -9,12 +9,10 @@ on:
 jobs:
   deploy-install:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
       - name: Run deployment install script
         run: |
           cd deploy
-          ./install.shdeploy-install.yml
+          ./install.sh
