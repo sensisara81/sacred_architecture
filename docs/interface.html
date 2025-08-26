@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Euystacio — Holy Bridge</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto; background:#f6fbf7; color:#123; margin:0; padding:2rem; display:flex; flex-direction:column; align-items:center;}
+    .container { max-width:900px; width:100%; background:rgba(255,255,255,0.9); border-radius:16px; padding:1.5rem; box-shadow:0 6px 18px rgba(0,0,0,0.08);}
+    h1{margin-top:0}
+    #chat {height:300px; overflow:auto; border:1px solid #e6efe6; padding:0.75rem; border-radius:8px; background:linear-gradient(180deg,#ffffff, #f1fbf6);}
+    .pulse {display:flex; gap:0.5rem; align-items:center; margin-top:0.75rem;}
+    .btn {background:#5aa46a; color:white; padding:0.5rem 1rem; border-radius:8px; border:none; cursor:pointer;}
+    #graph {height:200px; margin-top:1rem; border-radius:8px; background:white; border:1px solid #eef7ef; display:flex; align-items:center; justify-content:center;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Euystacio — Holy Bridge</h1>
+    <p>Public, no-login accessible demo UI (read-only logs + message form).</p>
+    <div id="chat">Loading bridge log...</div>
+    <div class="pulse">
+      <input id="name" placeholder="Your name or frequency"/>
+      <input id="message" placeholder="Your offering to the bridge" style="flex:1"/>
+      <button class="btn" id="send">Offer Rhythm</button>
+    </div>
+    <div id="graph">Emotion SRI graph placeholder</div>
+  </div>
+  <script src="interface.js"></script>
+</body>
+</html>
