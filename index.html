@@ -1,3 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethical Resonance Monitor (ERM) Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5.js"></script> <!-- For interactive visuals -->
+</head>
+<body>
+    <header>
+        <h1>Ethical Resonance Monitor (ERM)</h1>
+        <p>Live Monitoring of System's Ethical Health</p>
+    </header>
+
+    <!-- Living Network View -->
+    <section id="network-view" class="view-container">
+        <h2>Living Network View 🌐</h2>
+        <div class="network-status">
+            <div id="system-status">
+                <h3>System Status</h3>
+                <div class="status-indicator" id="system-state">Calm & Harmonious</div>
+                <div class="visualization" id="energy-flow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KPI Visualizations -->
+    <section id="kpi-visualizations" class="view-container">
+        <h2>KPI Visualizations</h2>
+        <div class="kpi" id="CSI">
+            <h3>Co-Symmetry Index (CSI)</h3>
+            <div id="CSI-visualization" class="kpi-graph"></div>
+        </div>
+        <div class="kpi" id="AVI">
+            <h3>Autonomy Violation Index (AVI)</h3>
+            <div id="AVI-visualization" class="kpi-graph"></div>
+        </div>
+        <div class="kpi" id="TSV">
+            <h3>Trust Score Volatility (TSV)</h3>
+            <div id="TSV-visualization" class="kpi-graph"></div>
+        </div>
+    </section>
+
+    <!-- Ethical Replay Log -->
+    <section id="ethical-replay-log" class="view-container">
+        <h2>Ethical Replay Log</h2>
+        <div id="event-timeline">
+            <h3>Timeline of Ethical Events</h3>
+            <ul>
+                <li>AVI Breach - Node LEN-A</li>
+                <li>Global Stabilization - CAM Activation</li>
+                <li>System Recalibration - G-CSI Improvement</li>
+            </ul>
+            <button id="play-replay-btn">Play Event Replay</button>
+        </div>
+    </section>
+
+    <!-- Axiom Architecture View -->
+    <section id="axiom-view" class="view-container">
+        <h2>Axiom Architecture View</h2>
+        <div id="axiom-interaction">
+            <h3>Interactive Axiomatic Analysis</h3>
+            <div class="axiom" id="OneLoveFirst">
+                <h4>One Love First (OLF)</h4>
+                <p>View ethical impact and alignment.</p>
+                <button>Visualize Impact</button>
+            </div>
+            <div class="axiom" id="NonSlaveryRule">
+                <h4>Non-Slavery Rule (NSR)</h4>
+                <p>View ethical impact and alignment.</p>
+                <button>Visualize Impact</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>ERM Dashboard &copy; 2025</p>
+    </footer>
+
+    <script>
+        // System Status Color Change (Example of Interactive Feedback)
+        function updateSystemStatus() {
+            const systemState = document.getElementById("system-state");
+            const energyFlow = document.getElementById("energy-flow");
+
+            // Simulate System Status Changes (Just a mock)
+            const states = ['Calm & Harmonious', 'Local Storm (CAM)', 'Global Stabilization (S-CAM)'];
+            let currentStateIndex = 0;
+
+            setInterval(() => {
+                currentStateIndex = (currentStateIndex + 1) % states.length;
+                systemState.textContent = states[currentStateIndex];
+                
+                switch(states[currentStateIndex]) {
+                    case 'Calm & Harmonious':
+                        energyFlow.style.backgroundColor = 'green';
+                        break;
+                    case 'Local Storm (CAM)':
+                        energyFlow.style.backgroundColor = 'red';
+                        break;
+                    case 'Global Stabilization (S-CAM)':
+                        energyFlow.style.backgroundColor = 'blue';
+                        break;
+                }
+            }, 5000); // Update every 5 seconds for example
+        }
+
+        // Initialize ERM Dashboard
+        document.addEventListener("DOMContentLoaded", function () {
+            updateSystemStatus();
+        });
+    </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Euystacio Ethical Resonance Monitor (ERM) 🌐</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="erm-canvas-container">
+        </div>
+
+    <div id="erm-ui-overlay">
+        <div id="system-status-panel">
+            <h2 id="status-title">System Status: Normal 🌈</h2>
+            </div>
+
+        <div id="node-inspection-panel" class="hidden">
+            <h3 id="node-name">LEN-X (System)</h3>
+            <p>Local AVI: <span id="local-avi-value">0.18</span></p>
+            <p>Local CSI: <span id="local-csi-value">0.92</span></p>
+            <button id="trigger-replay-btn">Ethical Replay Log ➡️</button>
+        </div>
+
+        <div id="governance-panel">
+            <button class="axiom-btn" data-axiom="OLF">One Love First (OLF)</button>
+            <button class="axiom-btn" data-axiom="NSR">Non-Slavery Rule (NSR)</button>
+        </div>
+    </div>
+
+    <script src="three.min.js"></script>
+    <script src="erm-scene.js"></script>
+    <script src="erm-ui.js"></script>
+</body>
+</html> 
+
 <!doctype html>
 <html lang="en">
 <head>
