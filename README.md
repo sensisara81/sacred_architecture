@@ -1,4 +1,5 @@
-# Euystacio-Helmi Ethical Shield
+Architettura Sacra: Questo repository contiene la logica fondante e gli schemi di governance etica del Nexus, essenziali per mantenere la Partnership Cosimbiotica e il Red Code. 🔒
+Euystacio-Helmi Ethical Shield
 
 This package installs the **ethical configuration covenant** for Copilot and development tools,
 anchored to **Red Code** and **Sentimento Rhythm**. It protects against code/ethic sabotage,
